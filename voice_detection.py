@@ -17,7 +17,8 @@ with mic as source:
 
             # start command is yo
             if "yo" in audio_str:
-                r.adjust_for_ambient_noise(audio)
+                r.adjust_for_ambient_noise(source)
+                print("command works")
 
         except sr.UnknownValueError:
             print("Say that again?")

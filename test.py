@@ -1,3 +1,3 @@
-import voice_detection
-
-voice_detection()
+import autogui
+command = autogui.create_command("yo", 10, 10)
+print(command)
